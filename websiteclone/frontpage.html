@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quora</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: #0e0e0e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(167, 141, 141);
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+<!--- Navigation left -->
+nav {
+    float: left;
+    width: 0%;
+    height: 300px;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 10;
+  } 
+  
+</style>
 </head>
 <body>
+
+<div class="topnav">
+  <a class="active" href="#home"></a>
+  <nav>
+    <a href="./frontpage.html"><img src="logo.png" alt="Quora" align="left" style="width:45px;height:24px;" /></a>
+    </nav> 
+  
+  <a href="./frontpage.html">Home</a>
+  <a href="./following.html">Following</a>
+  <a href="./answer.html">Answer</a>
+  <a href="./spaces.html">Spaces</a>
+  <a href="./notification.html">Notification</a>
+  <input  type="text" placeholder="Search.." style="width:400px;height:39px;">
+<a href="./notification.html">Try Quora+ </a>
+  <a href="./spaces.html">Profile</a>
+
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+<section>
+    <nav>
+          <ul>
+                <li><button><a href="">+ Create Space</a></button></li>
+                <li><button><a href="">Song Lyrics</a></button></li>
+                <li><button><a href=""> Fashion & Style</a></button></li>
+                <li><button><a href=""> Education</a></button></li>
+                <li><button><a href=""> Food</a></button></li>
+                <li><button><a href=""> Sports</a></button></li>
+                <li><button><a href=""> Health</a></button></li>
+                <li><button><a href=""> Movies</a></button></li>
+                <li><button><a href=""> Science</a></button></li>
+                <li><button><a href=""> Technology</a></button></li>
+                <li><button><a href=""> Music</a></button></li>
+                <li><button><a href=""> Photograph Recommendations</a></button></li>
+                <li><button><a href=""> Awakward Situations</a></button></li>
+                <li><button><a href=""> Discover Spaces</a></button></li>
+          </ul>
+    </nav>
     
+        <!-- WHat do you want to share -->
+     <aside>
+        &nbsp;&nbsp;&nbsp;<input  type="text" placeholder="What do you want to ask or share?" style="width:400px;height:39px;"><br>
+        <button><a href="">Ask</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+        <button><a href="">Answer</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+        <button><a href="">Post</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+    </aside>   
+        
+     
+</section>
+  
+
 </body>
 </html>
