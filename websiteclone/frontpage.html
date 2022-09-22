@@ -5,11 +5,62 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(251, 250, 250);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #91b7f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
 .topnav {
   overflow: hidden;
   background-color: #ffffff;
@@ -17,7 +68,7 @@ body {
 
 .topnav a {
   float: left;
-  color: #0e0e0e;
+  color: #fdf8f8;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,8 +114,17 @@ nav {
   <a href="./spaces.html">Spaces</a>
   <a href="./notification.html">Notification</a>
   <input  type="text" placeholder="Search.." style="width:400px;height:39px;">
-<a href="./notification.html">Try Quora+ </a>
+  <a href="./notification.html">Try Quora+ </a>
   <a href="./spaces.html">Profile</a>
+  <br><br><br>
+
+  <!-- WHat do you want to share -->
+  <aside>
+     &nbsp;&nbsp;&nbsp;<input  type="text" placeholder="What do you want to ask or share?" style="width:400px;height:39px;"><br>
+     <button><a href="">Ask</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+     <button><a href="">Answer</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+     <button><a href="">Post</a></button>&nbsp;&nbsp;&nbsp;&nbsp
+ </aside>   
 
 </div>
 
@@ -89,19 +149,9 @@ nav {
                 <li><button><a href=""> Awakward Situations</a></button></li>
                 <li><button><a href=""> Discover Spaces</a></button></li>
           </ul>
-    </nav>
-    
-        <!-- WHat do you want to share -->
-     <aside>
-        &nbsp;&nbsp;&nbsp;<input  type="text" placeholder="What do you want to ask or share?" style="width:400px;height:39px;"><br>
-        <button><a href="">Ask</a></button>&nbsp;&nbsp;&nbsp;&nbsp
-        <button><a href="">Answer</a></button>&nbsp;&nbsp;&nbsp;&nbsp
-        <button><a href="">Post</a></button>&nbsp;&nbsp;&nbsp;&nbsp
-    </aside>   
+    </nav> 
         
-     
 </section>
-  
-
-</body>
-</html>
+ </body>
+ 
+ </html>
