@@ -1,156 +1,168 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Quora</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: rgb(251, 250, 250);
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #91b7f4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-}
+  <link rel="stylesheet" href="./css/style.css">
+    <title>Twitter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./favicon_twitter.png">
+<meta name="viewport" content="width=device-width, initial--scale=1.0">
 
-.topnav a {
-  float: left;
-  color: #fdf8f8;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: rgb(167, 141, 141);
-  color: white;
-}
-
-.topnav a.active {
-  background-color: #ffffff;
-  color: white;
-}
-
-nav {
-    float: left;
-    width: 0%;
-    height: 300px;
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 10;
-  } 
-  
-</style>
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="#home"></a>
-  <nav>
-    <a href="./frontpage.html"><img src="logo.png" alt="Quora" align="left" style="width:45px;height:24px;" /></a>
-    </nav> 
-  
-  <a href="./frontpage.html">Home</a>
-  <a href="./following.html">Following</a>
-  <a href="./answer.html">Answer</a>
-  <a href="./spaces.html">Spaces</a>
-  <a href="./notification.html">Notification</a>
-  <input  type="text" placeholder="Search.." style="width:400px;height:39px;">
-  <a href="./notification.html">Try Quora+ </a>
-  <a href="./spaces.html">Profile</a>
-  <br><br><br>
+  <!-- sidebar starts -->
+<div class="sidebar">
+  <i class="fab fa-twitter"></i>
+  <div class="sidebarOption active">
+    <span class="material-icons">home</span>
+    <h2><strong>Home</strong></h2>
+  </div>
 
-  <!-- WHat do you want to share -->
-  <aside>
-     &nbsp;&nbsp;&nbsp;<input  type="text" placeholder="What do you want to ask or share?" style="width:400px;height:39px;"><br>
-     <button><a href="">Ask</a></button>&nbsp;&nbsp;&nbsp;&nbsp
-     <button><a href="">Answer</a></button>&nbsp;&nbsp;&nbsp;&nbsp
-     <button><a href="">Post</a></button>&nbsp;&nbsp;&nbsp;&nbsp
- </aside>   
+  <div class="sidebarOption">
+    <span class="material-icons">
+      numbers
+    </span>
+    <h2>Explore</h2>
+  </div>
+
+  <div class="sidebarOption">
+    <span class="material-icons">
+      notifications
+    </span>
+    <h2>Notifications</h2>
+  </div>  
+
+  <div class="sidebarOption">
+    <span class="material-icons">
+      mail_outline
+      </span>
+    <h2>Messages</h2>
+  </div>
+
+  <div class="sidebarOption">
+    <span class="material-icons">
+      bookmark_border
+    </span>
+    <h2>Bookmarks</h2>
+  </div>  
+
+  <div class="sidebarOption">
+    <span class="material-icons">
+      sort
+    </span>
+    <h2>Lists</h2>
+  </div>
+
+  <div class="sidebarOption">
+    <span class="material-icons">
+      perm_identity
+    </span>
+    <h2>Profile</h2>
+  </div>  
+  <div class="sidebarOption">
+    <span class="material-icons">
+      more_horiz
+    </span>      
+    <h2>More</h2>
+  </div>
+  <button class="sidebar__tweet">Tweet</button>
 
 </div>
+<!-- sidebar ends -->
 
-<div style="padding-left:16px">
-  
+<!-- feed starts -->
+<div class="feed">
+  <div class="feed__header">
+    <h2>Home</h2>
 </div>
-<section>
-    <nav>
-          <ul>
-                <li><button><a href="">+ Create Space</a></button></li>
-                <li><button><a href="">Song Lyrics</a></button></li>
-                <li><button><a href=""> Fashion & Style</a></button></li>
-                <li><button><a href=""> Education</a></button></li>
-                <li><button><a href=""> Food</a></button></li>
-                <li><button><a href=""> Sports</a></button></li>
-                <li><button><a href=""> Health</a></button></li>
-                <li><button><a href=""> Movies</a></button></li>
-                <li><button><a href=""> Science</a></button></li>
-                <li><button><a href=""> Technology</a></button></li>
-                <li><button><a href=""> Music</a></button></li>
-                <li><button><a href=""> Photograph Recommendations</a></button></li>
-                <li><button><a href=""> Awakward Situations</a></button></li>
-                <li><button><a href=""> Discover Spaces</a></button></li>
-          </ul>
-    </nav> 
-        
-</section>
- </body>
- </html>
+
+<!-- whatshappeningbox starts-->
+<div class="whatshappeningBox">
+  <form>
+    <div class="whatshappeningbox__input">
+      <img src="./myavatar.jpg" alt="Avatar icon"/>
+      <input type="text" placeholder="What's Happening?" />
+    </div>
+    <button class="whatshappeningBox__whatshappeningButton">Tweet</button>
+  </form>    
+</div>  
+<!-- whatshappeningbox ends-->
+
+<!-- post part starts-->
+<div class="post">
+  <div class="post__avatar">
+    <img 
+      src="./myavatar.jpg" 
+      alt="Avatar icon"/>
+</div>
+
+  <div class="post__body">
+    <div class="post__header">
+      <div class="post__headerText">
+        <h3>Nischal Niraula
+          <span class="post__headerSpecial">@nishalniraul15
+            </span>
+        </h3>
+      </div>
+      <div class="post__headerDescrip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <img src="./bikeimage.jpg" alt="Yamaha R1M">
+    <div class="post__footer">
+      <span class="material-icons">
+         repeat 
+        </span>
+      <span class="material-icons">
+        favorite_border
+      </span>      
+      <span class="material-icons"> 
+        publish
+       </span>
+    </div>
+  </div>
+</div>
+<!-- post part ends-->
+
+<!-- post part starts-->
+<div class="post">
+  <div class="post__avatar">
+    <img 
+      src="./myavatar.jpg" 
+      alt="Avatar icon"/>
+</div>
+
+  <div class="post__body">
+    <div class="post__header">
+      <div class="post__headerText">
+        <h3>Nischal Niraula
+          <span class="post__headerSpecial">@nishalniraul15
+            </span>
+        </h3>
+      </div>
+      <div class="post__headerDescrip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <img src="./bikeimage.jpg" alt="Yamaha R1M">
+    <div class="post__footer">
+      <span class="material-icons">
+         repeat 
+        </span>
+      <span class="material-icons">
+        favorite_border
+      </span>      
+      <span class="material-icons"> 
+        publish
+       </span>
+    </div>
+  </div>
+</div>
+<!-- post part ends-->
+</div>
+<!-- feed ends -->
+
+  
+</body>
+</html>
