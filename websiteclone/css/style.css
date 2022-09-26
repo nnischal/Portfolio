@@ -64,6 +64,34 @@ body {
   text-align: center;
 }
 
+.accountinfo img{
+  border-radius: 50%;
+  height: 35px;
+}
+
+.accountinfo{
+  margin-top: 20px;
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.2;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.accountinfo h4 {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accountinfo h5 {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
   margin-left: auto;
   margin-right: auto;
@@ -127,11 +155,15 @@ body{
 }
 
 /* whatshappeningbox */
+.whatshappeningBox__input img {
+  border-radius: 50%;
+  height: 40px;
+}
 
-.whatshappeningBox__input{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 16px;
+.whatshappeningBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
 }
 
 .whatshappeningBox form {
@@ -139,19 +171,13 @@ body{
   flex-direction: column;
 }
 
-.whatshappeningbox__input img {
-  border-radius: 50%;
-  height: 50px;
+.whatshappeningBox__input {
+    display: flex;    
+    padding: 20px;
 }
 
-.whatshappeningbox__input img:hover{
+.whatshappeningBox__input img:hover{
   cursor: pointer;
-
-}
-
-.whatshappeningBox {
-  padding-bottom: 10px;
-  border-bottom: 8px solid var(--twitter-background);
 }
 
 .whatshappeningBox__input input {
@@ -193,6 +219,7 @@ body{
 .post__body img {
   width: 450px;
   object-fit: contain;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -210,13 +237,13 @@ body{
 }
 
 .post__headerSpecial {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 12px;
   color: gray;
 }
 
 .post__headerText h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 5px;
 }
 
@@ -235,5 +262,63 @@ body{
 
 }
 
+/* widgets */
+.widgets {
+  flex: 0.3;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background-color);
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.widgets__input input {
+  border: none;
+  outline: none;
+  background-color: var(--twitter-background-color);
+}
+
+.widgets__searchIcon {
+  color: gray;
+}
+
+.trends-for-you {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f5f8fa;
+}
+
+.trends-for-you__block {
+  border-bottom: 1px solid #e6e6f0;
+  padding: 10px 15px;
+
+}
+
+.trends-for-you__heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+.trends-for-you__meta-information {
+  font-size: 14px;
+  font-weight: 300;
+  color: #657786;
+}
+
+.trends-for-you__trend-name {
+  font-size: 15px;
+  color: #14171a;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
 
 
