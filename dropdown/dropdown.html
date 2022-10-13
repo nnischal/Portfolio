@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown | Twitter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/logo-transparent.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="/images/myavatar.jpg" class="user-pic" onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="./images/myavatar.jpg">
+                        <h3>Nischal Niraula</h3>
+                    </div>
+
+                    <a href="#" class="sub-menu-link">
+                        <span class="material-icons">topic</span>
+                        <p>Topics</p>                       
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <span class="material-icons">account_circle</span>
+                        <p>Twitter Circle</p>                        
+                    </a>
+
+                    <hr>
+                    
+                    <a href="#" class="sub-menu-link">
+                        <p>Creator Studio</p>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Professional Tools</p>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Settings and Support</p>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
